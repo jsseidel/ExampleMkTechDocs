@@ -1,6 +1,6 @@
 # What is a master file?
 
-MkTechDocs uses the concept of a "master document," which is nothing more than a normal markdown file that includes other markdown files. Here is this project's `master.md` file, for example:
+MkTechDocs uses the concept of a "master document," which is nothing more than a normal markdown file that includes other markdown files. Every MkTechDocs project has a `master.md` file. Here is this project's `master.md` file, for example:
 
 ```{.include-code language=markdown}
 master.md

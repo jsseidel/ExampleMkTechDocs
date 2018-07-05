@@ -36,7 +36,7 @@ For more information about groovy and pandoc integration, [see this repository](
 
 ## Python (Jinja2) templates
 
-Using python templates is a little different. For these, you need to create 2 files. First, you create a `*.pyt` file. Here's what a Jinja2 python file looks like:
+Using python templates is a little different. For these, you need to create 2 files. First, you create a `*.pyt` file. Here's what a Jinja2 python template looks like:
 
 ```python
 # My Jinja2 template
