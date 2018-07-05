@@ -1,6 +1,6 @@
 # ExampleMkTechDocs
 
-This repo contains an tutorial MkTechDocs project, intended to get you up and running with MkTechDocs quickly using Docker or a local installation of MkTechDocs.
+This repo contains an tutorial [MkTechDocs](https://github.com/att/MkTechDocs) project, intended to get you up and running with [MkTechDocs](https://github.com/att/MkTechDocs) quickly using Docker or a local installation of [MkTechDocs](https://github.com/att/MkTechDocs).
 
 It produces [this output](https://jsseidel.github.io/GettingStartedWithMkTechDocs/).
 
