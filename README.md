@@ -1,6 +1,6 @@
 # ExampleMkTechDocs
 
-This repo contains an self-explaining example MkTechDocs project, which hopefully get you up and running with MkTechDocs quickly using Docker or a local installation of MkTechDocs.
+This repo contains an tutorial MkTechDocs project, intended to get you up and running with MkTechDocs quickly using Docker or a local installation of MkTechDocs.
 
 ## Building
 
