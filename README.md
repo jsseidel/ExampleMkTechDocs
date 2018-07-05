@@ -7,19 +7,19 @@ This repo contains an tutorial MkTechDocs project, intended to get you up and ru
 Docker:
 
 ```
-git clone https://github.com/jsseidel/ExampleMkTechDocs
-cd ExampleMkTechDocs
+git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
+cd GettingStartedWithMkTechDocs
 docker run --rm -v $(pwd):/project jsseidel/mktechdocs
 ```
 
 Local MkTechDocs installation:
 
 ```
-git clone https://github.com/jsseidel/ExampleMkTechDocs
-cd ExampleMkTechDocs
+git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
+cd GettingStartedWithMkTechDocs
 mktechdocs
 ```
 
-Your output will be in `example_pages`. Note that dependining on your docker setup, this directory may be owned by the `root` user after the build. Local installations of MkTechDocs don't need to worry about this.
+Your output will be in `getting_started_pages`. Note that dependining on your docker setup, this directory may be owned by the `root` user after the build. Local installations of MkTechDocs don't need to worry about this.
 
 
