@@ -1,0 +1,11 @@
+# My groovy template
+
+This content is coming from a groovy template. Using templates, you can include logic in your documentation. Here is a silly counter to demonstrate the mechanics of using a groovy template:
+
+<%
+(1..10).each {
+	print "$it "
+}
+%>
+
+That's it!
