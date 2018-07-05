@@ -2,6 +2,8 @@
 
 This repo contains an tutorial MkTechDocs project, intended to get you up and running with MkTechDocs quickly using Docker or a local installation of MkTechDocs.
 
+It produces [this output](https://jsseidel.github.io/GettingStartedWithMkTechDocs/).
+
 ## Building
 
 Docker:
