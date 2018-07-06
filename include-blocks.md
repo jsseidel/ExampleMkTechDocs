@@ -5,7 +5,7 @@ You might be wondering if other markdown files can use `include` blocks. Yes! Th
 It does this with a little clue from you. Here's what one looks like:
 
     ```{.include heading-level=1}
-		sub-directory/myincludedfile.md
+    sub-directory/myincludedfile.md
     ```
 
 `heading-level=1` tells MkTechDocs that at the point of the include, the current heading level is 1. When the file is included, MkTechDocs will automatically increase all the heading levels in the included document by 1 so that it fits nicely into the current document.
