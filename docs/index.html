@@ -110,6 +110,8 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <span class="co"># htmlmulti: Static landing page with static table of contents on the left. Each section has it&#39;s own separate HTML page.</span>
 <span class="co"># markdown: Collage everything in master.md into a single markdown file.</span>
 <span class="co"># docx: A standard Microsoft Word docx document.</span>
+<span class="co"># epub: A epub ebook</span>
+<span class="co"># epub3: A epub3 ebook</span>
 <span class="va">FORMAT=</span>cssframes
 <span class="co"># Select your style.</span>
 <span class="co">#</span>
@@ -243,7 +245,7 @@ demonstrate the mechanics of using a groovy template:</p>
 <p>Using python templates is a little different. For these, you need to create 2 files. First, you create a <code>*.pyt</code> file. Here's what a Jinja2 python template looks like:</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># My Jinja2 template</span>
 
-This <span class="kw">is</span> a Python Jinja2 template. It counts to <span class="dv">10</span>.
+This <span class="kw">is</span> a Python Jinja2 template. It counts to <span class="fl">10.</span>
 
 {<span class="op">%</span> <span class="cf">for</span> n <span class="kw">in</span> numbers <span class="op">%</span>}
 {{n}}
