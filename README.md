@@ -4,6 +4,8 @@ This repo contains a tutorial [MkTechDocs](https://github.com/att/MkTechDocs) pr
 
 It produces [this output](https://jsseidel.github.io/GettingStartedWithMkTechDocs/).
 
+If you plan on browsing directly on GitHub, be sure to click the "Raw" button when you view markdown files so you can see things that GitHub hides after rendering the page.
+
 ## Building
 
 ### Docker
