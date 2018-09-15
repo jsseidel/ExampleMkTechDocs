@@ -96,6 +96,9 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <li>A <code>mktechdocs.conf</code></li>
 <li>Any number of markdown files, images, scripts, and template files</li>
 </ol>
+<p>You can easily build a MkTechDocs project, including this project, with Docker
+or a local installation of MkTechDocs. Simply follow the directions
+<a href="https://github.com/jsseidel/GettingStartedWithMkTechDocs/blob/master/README.md">here</a>.</p>
 <h1 id="configuring-your-mktechdocs-project"><span class="header-section-number">2</span> Configuring your MkTechDocs project</h1>
 <p>The easiest way to learn how to configure a MkTechDocs project is by looking at the <code>mktechdocs.conf</code> file for this project. Here it is:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># The title of your final document</span>
@@ -247,7 +250,7 @@ demonstrate the mechanics of using a groovy template:</p>
 <p>Using python templates is a little different. For these, you need to create 2 files. First, you create a <code>*.pyt</code> file. Here's what a Jinja2 python template looks like:</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># My Jinja2 template</span>
 
-This <span class="kw">is</span> a Python Jinja2 template. It counts to <span class="fl">10.</span>
+This <span class="kw">is</span> a Python Jinja2 template. It counts to <span class="dv">10</span>.
 
 {<span class="op">%</span> <span class="cf">for</span> n <span class="kw">in</span> numbers <span class="op">%</span>}
 {{n}}
