@@ -25,6 +25,18 @@ build-docs.sh
 
 ### Local MkTechDocs installation
 
+Start by cloning the MkTechDocs repository:
+
+```
+git clone https://github.com/att/MkTechDocs
+```
+
+Next, you'll need to set up your environment. Please refer to the [Setting up
+your environment](https://att.github.io/MkTechDocs/#setting-up-your-environment)
+section of the MkTechDocs usage guide.
+
+Once the test scripts are working properly, you can build this sample project:
+
 ```
 git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
 cd GettingStartedWithMkTechDocs
