@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm -v $(pwd):/project jsseidel/mktechdocs
+docker run --user $(id -u):$(id -g) --rm -v $(pwd):/project jsseidel/mktechdocs

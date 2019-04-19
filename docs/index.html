@@ -250,7 +250,7 @@ demonstrate the mechanics of using a groovy template:</p>
 <p>Using python templates is a little different. For these, you need to create 2 files. First, you create a <code>*.pyt</code> file. Here's what a Jinja2 python template looks like:</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># My Jinja2 template</span>
 
-This <span class="kw">is</span> a Python Jinja2 template. It counts to <span class="dv">10</span>.
+This <span class="kw">is</span> a Python Jinja2 template. It counts to <span class="fl">10.</span>
 
 {<span class="op">%</span> <span class="cf">for</span> n <span class="kw">in</span> numbers <span class="op">%</span>}
 {{n}}
@@ -258,7 +258,7 @@ This <span class="kw">is</span> a Python Jinja2 template. It counts to <span cla
 
 That<span class="st">&#39;s it!</span></code></pre></div>
 <p>Next, you need a <em>renderer</em> file. Renderers are used to pass variables to Jinja2, which uses this map to fill in values. Here's one for this example:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">#!/usr/bin/env python</span>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">#!/usr/bin/env python3</span>
 
 <span class="im">import</span> os
 <span class="im">import</span> sys
@@ -278,7 +278,7 @@ That<span class="st">&#39;s it!</span></code></pre></div>
         sys.stderr.write(<span class="st">&quot;Cannot find &quot;</span> <span class="op">+</span> sys.argv[<span class="dv">1</span>] <span class="op">+</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)
         sys.exit(<span class="dv">1</span>)
 
-    <span class="bu">print</span> render_mktechdocs_jinja2_template(sys.argv[<span class="dv">1</span>], varDictionary)
+    <span class="bu">print</span> (render_mktechdocs_jinja2_template(sys.argv[<span class="dv">1</span>], varDictionary))
 
 <span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:
     render()</code></pre></div>
@@ -300,7 +300,7 @@ That<span class="st">&#39;s it!</span></code></pre></div>
 <p>Here is the content of this project's <code>footer.htmlt</code>:</p>
 <div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> align=</span><span class="st">center</span><span class="kw">&gt;&lt;p&gt;</span><span class="dv">&amp;copy;</span> {{year}} Spencer Seidel<span class="kw">&lt;/p&gt;&lt;/div&gt;</span></code></pre></div>
 <p>And here is the content of this project's <code>footer.renderer</code>:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">#!/usr/bin/env python</span>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">#!/usr/bin/env python3</span>
 
 <span class="im">import</span> os
 <span class="im">import</span> sys
@@ -321,20 +321,21 @@ That<span class="st">&#39;s it!</span></code></pre></div>
         sys.stderr.write(<span class="st">&quot;Cannot find &quot;</span> <span class="op">+</span> sys.argv[<span class="dv">1</span>] <span class="op">+</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)
         sys.exit(<span class="dv">1</span>)
 
-    <span class="bu">print</span> render_mktechdocs_jinja2_template(sys.argv[<span class="dv">1</span>], varDictionary)
+    <span class="bu">print</span> (render_mktechdocs_jinja2_template(sys.argv[<span class="dv">1</span>], varDictionary))
 
 <span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:
     render()</code></pre></div>
 <h1 id="pdf-files"><span class="header-section-number">9</span> PDF files</h1>
 <p>The docker version of MkTechDocs does <strong>NOT</strong> support PDF generation. This is simply because doing so would make the already-huge docker image twice as large.</p>
-<p>The good news is that MkTechDocs has robust support for producing PDFs thanks to Pandoc and XeLaTeX. To produce PDFs, you need to install MkTechDocs locally. Follow <a href="https://att.github.io/MkTechDocs/#setting-up-your-environment">these instructions</a> carefully. If you need Groovy support, you'll additionally need to follow <a href="https://att.github.io/MkTechDocs/#installation-of-groovy-components">these instructions</a>.</p>
+<p>The good news is that MkTechDocs has robust support for producing PDFs thanks to Pandoc and XeLaTeX. To produce PDFs, you need to install MkTechDocs locally. You can download and install a <code>deb</code> package <a href="https://github.com/att/MkTechDocs/releases">here</a>. Groovy support is baked in.</p>
+<p>Or, if you want to run from source, follow <a href="https://att.github.io/MkTechDocs/#setting-up-your-environment">these instructions</a> carefully. If you need Groovy support, you'll additionally need to follow <a href="https://att.github.io/MkTechDocs/#installation-of-groovy-components">these instructions</a>.</p>
 <p>You set some environment variables and then run an dependency-installation script appropriate for your architecture. Currently, there are scripts for Ubuntu (16.04 and 18.04), Arch Linux, Fedora, and macOS.</p>
 <p>Warning: installation of the dependencies can trip up even seasoned techies, so you might want to take a look at what the script does before running it.</p>
 <h1 id="more-information"><span class="header-section-number">10</span> More information</h1>
 <p>For more information about using MkTechDocs, please see the <a href="https://att.github.io/MkTechDocs/">usage guide</a>.</p>
 </div><!-- content -->
 <div id="footer">
-<div align=center><p>&copy; 2018 Spencer Seidel</p></div>
+<div align=center><p>&copy; 2019 Spencer Seidel</p></div>
 
 </div><!-- footer -->
 </div><!-- wrapper -->

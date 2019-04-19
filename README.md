@@ -13,7 +13,7 @@ If you plan on browsing directly on GitHub, be sure to click the "Raw" button wh
 ```
 git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
 cd GettingStartedWithMkTechDocs
-docker run --rm -v $(pwd):/project jsseidel/mktechdocs
+docker run --user $(id -u):$(id -g) --rm -v $(pwd):/project jsseidel/mktechdocs
 ```
 Or, use the build-docs.sh script included in this repo:
 
