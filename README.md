@@ -39,7 +39,7 @@ sudo apt install mktechdocs
 
 ### Local MkTechDocs installation
 
-Start by cloning the MkTechDocs repository:
+Clone the MkTechDocs repository:
 
 ```
 git clone https://github.com/att/MkTechDocs
