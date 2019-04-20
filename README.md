@@ -6,7 +6,7 @@ It produces [this output](https://jsseidel.github.io/GettingStartedWithMkTechDoc
 
 If you plan on browsing directly on GitHub, be sure to click the "Raw" button when you view markdown files so you can see things that GitHub hides after rendering the page.
 
-## Building
+## Installing
 
 ### Docker
 
@@ -23,6 +23,20 @@ cd GettingStartedWithMkTechDocs
 build-docs.sh
 ```
 
+### Package installation
+
+#### Deb
+
+[https://github.com/att/MkTechDocs/releases](https://github.com/att/MkTechDocs/releases)
+
+#### PPA
+
+```bash
+sudo add-apt-repository ppa:jsseidel/mktechdocs
+sudo apt update
+sudo apt install mktechdocs
+```
+
 ### Local MkTechDocs installation
 
 Start by cloning the MkTechDocs repository:
@@ -31,11 +45,15 @@ Start by cloning the MkTechDocs repository:
 git clone https://github.com/att/MkTechDocs
 ```
 
+## Environment
+
 Next, you'll need to set up your environment. Please refer to the [Setting up
 your environment](https://att.github.io/MkTechDocs/#setting-up-your-environment)
 section of the MkTechDocs usage guide.
 
-Once the test scripts are working properly, you can build this sample project:
+## Build
+
+Now, build this sample project:
 
 ```
 git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
@@ -43,6 +61,9 @@ cd GettingStartedWithMkTechDocs
 mktechdocs
 ```
 
-Your output in either case will be in `getting_started_pages`. Note that depending on your docker setup, this directory may be owned by the `root` user after the build. Local installations of MkTechDocs don't need to worry about this.
+Your output in either case will be in `getting_started_pages`. Note that
+depending on your docker setup, this directory may be owned by the `root` user
+after the build. Local installations of MkTechDocs don't need to worry about
+this.
 
 
