@@ -121,7 +121,7 @@ or a local installation of MkTechDocs. Simply follow the directions
 <span class="co"># archwiki: In the style of the Arch Linux Wiki</span>
 <span class="co"># github: Like GitHub documentation</span>
 <span class="co"># custom: Do your own thing. Start with the sample mktechdocs.css included in this project. Note that if you use this option you must provide a value for CUSTOM_CSS below.</span>
-<span class="va">HTML_STYLE=</span>custom
+<span class="va">HTML_STYLE=</span>github
 <span class="co"># This controls how many levels of headings to include in the table of contents. Here, six levels of headers will be visible.</span>
 <span class="va">TABLE_OF_CONTENTS_MAIN_DEPTH=</span>6
 <span class="co"># This controls how many levels of headings to include in the table of contents on &quot;sub&quot; pages, which are only applicable when using the &quot;htmlmulti&quot; format.</span>
@@ -326,11 +326,34 @@ That<span class="st">&#39;s it!</span></code></pre></div>
 <span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:
     render()</code></pre></div>
 <h1 id="pdf-files"><span class="header-section-number">9</span> PDF files</h1>
-<p>The docker version of MkTechDocs does <strong>NOT</strong> support PDF generation. This is simply because doing so would make the already-huge docker image twice as large.</p>
-<p>The good news is that MkTechDocs has robust support for producing PDFs thanks to Pandoc and XeLaTeX. To produce PDFs, you need to install MkTechDocs locally. You can download and install a <code>deb</code> package <a href="https://github.com/att/MkTechDocs/releases">here</a>. Groovy support is baked in.</p>
-<p>Or, if you want to run from source, follow <a href="https://att.github.io/MkTechDocs/#setting-up-your-environment">these instructions</a> carefully. If you need Groovy support, you'll additionally need to follow <a href="https://att.github.io/MkTechDocs/#installation-of-groovy-components">these instructions</a>.</p>
-<p>You set some environment variables and then run an dependency-installation script appropriate for your architecture. Currently, there are scripts for Ubuntu (16.04 and 18.04), Arch Linux, Fedora, and macOS.</p>
-<p>Warning: installation of the dependencies can trip up even seasoned techies, so you might want to take a look at what the script does before running it.</p>
+<p>The docker version of MkTechDocs does <strong>NOT</strong> support PDF generation. This is
+simply because doing so would make the already-huge docker image twice as
+large.</p>
+<p>The good news is that MkTechDocs has robust support for producing PDFs thanks
+to Pandoc and XeLaTeX. To produce PDFs, you need to install MkTechDocs locally.
+You can download and install a <code>deb</code> package
+<a href="https://github.com/att/MkTechDocs/releases">here</a>. Groovy support is baked in.</p>
+<p>Or, you can install via a PPA:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> apt-add-repository ppa:jsseidel/mktechdocs
+<span class="fu">sudo</span> apt update
+<span class="fu">sudo</span> apt install mktechdocs</code></pre></div>
+<p class="note"><b>Note</b>: Installing via the Deb package or PPA can cause issues if you have a local copy
+of java or groovy installed instead of having one installed via apt. In this
+case, you're better off installing via source as described below (which is
+frankly almost as easy).</p>
+
+<p>Or, if you want to run from source, follow <a href="https://att.github.io/MkTechDocs/#setting-up-your-environment">these
+instructions</a>
+carefully. If you need Groovy support, you'll additionally need to follow
+<a href="https://att.github.io/MkTechDocs/#installation-of-groovy-components">these
+instructions</a>.</p>
+<p>You set some environment variables and then run an dependency-installation
+script. Currently, Ubuntu 18.04+ is supported, although it's relatively easy to
+adapt to new environments since there are no exotic packages.</p>
+<p class="note"><b>Note</b>: Installation of the dependencies can trip up even seasoned techies, especially
+if you need to preserve locally installed versions of java and groovy, so you
+should take a look at what the script does before running it.</p>
+
 <h1 id="more-information"><span class="header-section-number">10</span> More information</h1>
 <p>For more information about using MkTechDocs, please see the <a href="https://att.github.io/MkTechDocs/">usage guide</a>.</p>
 </div><!-- content -->
