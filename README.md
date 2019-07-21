@@ -75,8 +75,6 @@ Or, use the build-docs.sh script included in this repo:
 **Or Deb/PPA/source**
 
 ```
-git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
-cd GettingStartedWithMkTechDocs
 mktechdocs
 ```
 
