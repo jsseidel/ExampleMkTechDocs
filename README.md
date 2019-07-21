@@ -45,15 +45,15 @@ Clone the MkTechDocs repository:
 git clone https://github.com/att/MkTechDocs
 ```
 
-## Environment
+#### Environment
 
-### Deb/PPA
+##### Deb/PPA
 
 ```bash
 . /opt/mktechdocs/bin/mktechdocs.env
 ```
 
-### From source
+##### From source
 
 Please refer to the [Setting up your
 environment](https://att.github.io/MkTechDocs/#setting-up-your-environment)
