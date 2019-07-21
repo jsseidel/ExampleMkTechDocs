@@ -1,4 +1,4 @@
-# ExampleMkTechDocs
+# GettingStartedWithMkTechDocs
 
 This repo contains a tutorial [MkTechDocs](https://github.com/att/MkTechDocs) project, intended to get you up and running with [MkTechDocs](https://github.com/att/MkTechDocs) quickly using Docker or a local installation of [MkTechDocs](https://github.com/att/MkTechDocs).
 
@@ -6,20 +6,22 @@ It produces [this output](https://jsseidel.github.io/GettingStartedWithMkTechDoc
 
 If you plan on browsing directly on GitHub, be sure to click the "Raw" button when you view markdown files so you can see things that GitHub hides after rendering the page.
 
-## Installing
+## Installing GettingStartedWithMkTechDocs
 
 ```bash
 git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
 cd GettingStartedWithMkTechDocs
 ```
 
-### With docker
+## Installing MkTechdocs
+
+### Using docker
 
 ```bash
 docker pull jsseidel/mktechdocs:latest
 ```
 
-### Without docker
+### By package or source
 
 **Deb**
 
@@ -41,7 +43,7 @@ Clone the MkTechDocs repository:
 git clone https://github.com/att/MkTechDocs
 ```
 
-### Environment
+### Set your environment
 
 **Deb/PPA**
 
