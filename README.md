@@ -8,28 +8,24 @@ If you plan on browsing directly on GitHub, be sure to click the "Raw" button wh
 
 ## Installing
 
-### Docker
-
-```
+```bash
 git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
 cd GettingStartedWithMkTechDocs
-docker run --user $(id -u):$(id -g) --rm -v $(pwd):/project jsseidel/mktechdocs
-```
-Or, use the build-docs.sh script included in this repo:
-
-```
-git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
-cd GettingStartedWithMkTechDocs
-build-docs.sh
 ```
 
-### Package installation
+### With docker
 
-#### Deb
+```bash
+docker pull jsseidel/mktechdocs:latest
+```
+
+### Without docker
+
+**Deb**
 
 [https://github.com/att/MkTechDocs/releases](https://github.com/att/MkTechDocs/releases)
 
-#### PPA
+**Or PPA**
 
 ```bash
 sudo add-apt-repository ppa:jsseidel/mktechdocs
@@ -37,7 +33,7 @@ sudo apt update
 sudo apt install mktechdocs
 ```
 
-### Local MkTechDocs installation
+**Or local MkTechDocs installation**
 
 Clone the MkTechDocs repository:
 
@@ -45,15 +41,15 @@ Clone the MkTechDocs repository:
 git clone https://github.com/att/MkTechDocs
 ```
 
-#### Environment
+### Environment
 
-##### Deb/PPA
+**Deb/PPA**
 
 ```bash
 . /opt/mktechdocs/bin/mktechdocs.env
 ```
 
-##### From source
+**Or from source**
 
 Please refer to the [Setting up your
 environment](https://att.github.io/MkTechDocs/#setting-up-your-environment)
@@ -62,7 +58,19 @@ that hard).
 
 ## Build
 
-Now, build this sample project:
+**Docker**
+
+```bash
+docker run --user $(id -u):$(id -g) --rm -v $(pwd):/project jsseidel/mktechdocs
+```
+
+Or, use the build-docs.sh script included in this repo:
+
+```bash
+./build-docs.sh
+```
+
+**Or Deb/PPA/source**
 
 ```
 git clone https://github.com/jsseidel/GettingStartedWithMkTechDocs
