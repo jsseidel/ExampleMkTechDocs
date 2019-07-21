@@ -55,9 +55,10 @@ git clone https://github.com/att/MkTechDocs
 
 ### From source
 
-Next, you'll need to set up your environment. Please refer to the [Setting up
-your environment](https://att.github.io/MkTechDocs/#setting-up-your-environment)
-section of the MkTechDocs usage guide.
+Please refer to the [Setting up your
+environment](https://att.github.io/MkTechDocs/#setting-up-your-environment)
+section of the MkTechDocs usage guide when installing from source (it's not
+that hard).
 
 ## Build
 
