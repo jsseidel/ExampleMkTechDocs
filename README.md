@@ -47,6 +47,14 @@ git clone https://github.com/att/MkTechDocs
 
 ## Environment
 
+### Deb/PPA
+
+```bash
+. /opt/mktechdocs/bin/mktechdocs.env
+```
+
+### From source
+
 Next, you'll need to set up your environment. Please refer to the [Setting up
 your environment](https://att.github.io/MkTechDocs/#setting-up-your-environment)
 section of the MkTechDocs usage guide.
